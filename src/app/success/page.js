@@ -8,7 +8,7 @@ export default function Home() {
         <div className="flex justify-center items-center bg-white w-screen h-screen">
         <Paper/>
         <Image
-        src="/valentines2025/yay.png"
+        src="/valentines2025"
         alt="happy"
         width={1200}
         height={1200}
