@@ -6,7 +6,7 @@ import Mail_collection from "@/components/mail/mail_collection";
 
 export default function Home() {
   return (
-    <div className="m-0 p-0 border-none">
+    <div className="m-0 p-0 border-none w-screen h-screen">
       <div className="absolute z-50 w-screen h-screen bg-[#fbfbfb] whiteUp"></div>
       <Image
         src="/valentines2025/title_short.png"
