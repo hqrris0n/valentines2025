@@ -29,3 +29,190 @@ body {
     transparent .5rem, 
     transparent 5rem);
 }
+
+.front {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 20;
+}
+.flap {
+  border-left: 280px solid transparent;
+  border-right: 280px solid transparent;
+  border-bottom: 164px solid transparent;
+  border-top: 196px solid #FFECA0;
+  transform-origin: top;
+}
+.pocket {
+  border-left: 280px solid #FFF2C0;
+  border-right: 280px solid #FFF2C0;
+  border-bottom: 180px solid #FFF2C0;
+  border-top: 180px solid transparent;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+.sm-front {
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 20;
+}
+.sm-flap {
+  border-left: 140px solid transparent;
+  border-right: 140px solid transparent;
+  border-bottom: 84px solid transparent;
+  border-top: 98px solid #FFECA0;
+  transform-origin: top;
+}
+.sm-pocket {
+  border-left: 140px solid #FFF2C0;
+  border-right: 140px solid #FFF2C0;
+  border-bottom: 90px solid #FFF2C0;
+  border-top: 90px solid transparent;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.letter {
+  position: relative;
+  background-color: #fff;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 90%;
+  top: 5%;
+  border-radius: 12px;
+  box-shadow: 0 2px 26px rgba(0, 0, 0, .12);
+}
+.letter:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 25%, rgba(215, 227, 239, 0.70) 55%, rgba(215, 227, 239, 1.00) 100%);
+}
+.open .flap, .open .sm-flap {
+  transform: rotatex(180deg);
+  transition: transform 0.4s ease, z-index 0.6s;
+  z-index: 1;
+}
+.close .flap {
+  transform: rotatex(0deg);
+  transition: transform 0.4s 0.6s ease, z-index 1s;
+  z-index: 5;
+}
+.close .letter {
+  transform: translatey(0px);
+  transition: transform 0.4s ease, z-index 1s;
+  z-index: 1;
+}
+.open .letter, .open .sm-letter {
+  transform: translatey(-60px);
+  transition: transform 0.4s 0.6s ease, z-index 0.6s;
+  z-index: 2;
+}
+.close .heart {
+  opacity: 0;
+  animation: none;
+}
+.open-mail {
+  z-index: 11;
+  animation: upDown 2s ease-in-out .5s;  /* Infinite loop */
+  animation-fill-mode: forwards;
+}
+.open-mail-answer {
+  z-index: 11;
+  animation: upDown 2s ease-in-out 1s;  /* Infinite loop */
+  animation-fill-mode: forwards;
+  cursor: pointer;
+}
+.shake-mid {
+  animation: shake-mid 2s ease-in-out infinite;
+}
+.shake-left {
+  animation: shake-left 2s ease-in-out infinite;
+}
+.shake-right {
+  animation: shake-right 2s ease-in-out infinite;
+}
+.hide {
+  animation: hide 1s ease-in-out forwards;
+}
+.show {
+  animation: show 1s ease-in-out forwards;
+}
+.titleUp {
+  animation: titleUp 2s ease-in-out 3s forwards;
+}
+.whiteUp {
+  animation: whiteUp 2s ease-in-out 3s forwards;
+}
+.pinkify {
+  filter: invert(50%) sepia(100%) hue-rotate(180deg);
+}
+@keyframes slideUp {
+  0% {
+      top: 0;
+  }
+  100% {
+      top: -600px;
+  }
+}
+@keyframes sideSway {
+  0% {
+      margin-left: 0px;
+  }
+  100% {
+      margin-left: 50px;
+  }
+}
+@keyframes upDown {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-275px) scale(1.5);  /* Move up and enlarge */
+  }
+  100% {
+    transform: translateY(0) scale(2);
+    z-index: 50;
+  }
+}
+@keyframes shake-mid {
+  0% { transform: rotate(0deg); }
+ 80% { transform: rotate(0deg); }
+ 85% { transform: rotate(5deg); }
+ 95% { transform: rotate(-5deg); }
+100% { transform: rotate(0deg); }
+}
+@keyframes shake-left {
+  0% { transform: rotate(-45deg); }
+ 80% { transform: rotate(-45deg); }
+ 85% { transform: rotate(-40deg); }
+ 95% { transform: rotate(-50deg); }
+100% { transform: rotate(-45deg); }
+}
+@keyframes shake-right {
+  0% { transform: rotate(45deg); }
+ 80% { transform: rotate(45deg); }
+ 85% { transform: rotate(50deg); }
+ 95% { transform: rotate(40deg); }
+100% { transform: rotate(45deg); }
+}
+@keyframes hide {
+  0% { opacity: 100%;}
+  100% {opacity: 0%}
+}
+@keyframes show {
+  0% { opacity: 0%;}
+  100% {opacity: 100%}
+}
+@keyframes titleUp {
+  0% {margin-top: -48px;}
+  100% {margin-top: -1000px;}
+}
+@keyframes whiteUp {
+  0% {margin-top: 0px;}
+  100% {margin-top: -952px;}
+}
