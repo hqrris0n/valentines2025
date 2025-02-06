@@ -9,7 +9,7 @@ export default function Home() {
     <div className="m-0 p-0 border-none">
       <div className="absolute z-50 w-screen h-screen bg-[#fbfbfb] whiteUp"></div>
       <Image
-        src="/title_short.png"
+        src="/valentines2025/title_short.png"
         alt="To the only girl I've ever loved"
         width={1000}
         height={100}
@@ -18,7 +18,7 @@ export default function Home() {
       <div className="grid grid-rows-[auto_1fr_auto] place-items-center bg-white w-screen h-screen">
         <Paper/>
         <Image
-        src="/title_long.png"
+        src="/valentines2025/title_long.png"
         alt="To the only girl I've ever loved"
         width={1000}
         height={100}

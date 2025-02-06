@@ -47,14 +47,14 @@ const Mail_collection = () => {
         <div className="sm-front sm-flap"></div>
         <div className="sm-front sm-pocket"></div>
         <Image
-          src="/stamp.png"
+          src="/valentines2025/stamp.png"
           alt="stamp"
           width="600"
           height="600"
           className="absolute -ml-4 -mt-28 z-30"
         />
         <Image
-          src="/yes.png"
+          src="/valentines2025/yes.png"
           alt="yes"
           width="100"
           height="100"
@@ -65,7 +65,7 @@ const Mail_collection = () => {
       </div>
       <div ref={envelopeM} onClick={openMail} className={`w-[560px] h-[352px] rounded-b-md mx-auto bg-[#EEE2B1] shadow-lg z-30 shake-mid cursor-pointer`}>
       <Image
-          src="/stamp.png"
+          src="/valentines2025/stamp.png"
           alt="stamp"
           width="600"
           height="600"
@@ -74,7 +74,7 @@ const Mail_collection = () => {
         <div className="front flap"></div>
         <div className="front pocket"></div>
         <Image
-          src="/letter.png"
+          src="/valentines2025/letter.png"
           alt="the question"
           width="200"
           height="200"
@@ -86,14 +86,14 @@ const Mail_collection = () => {
         <div className="sm-front sm-flap"></div>
         <div className="sm-front sm-pocket"></div>
         <Image
-          src="/stamp.png"
+          src="/valentines2025/stamp.png"
           alt="stamp"
           width="600"
           height="600"
           className="absolute -ml-4 -mt-28 z-30"
         />
         <Image
-            src="/yes.png"
+            src="/valentines2025/yes.png"
             alt="yes"
             width="100"
             height="100"
